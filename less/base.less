@@ -48,36 +48,59 @@ body {
 
 // 头部共有样式
 #header{
-	background-color: #ff4e49;
-	height: .5rem;
-	display: flex;
-	align-items: center;
-    justify-content: space-between;
-    padding: 0 .1rem;
-	.logo{
-		a{
-			display: block;
-			img{
-				height: .25rem;
-			}
-		}
-	}
-	.appdown{
-		a{
-			display: block;
-			img{
-				height: .34rem;
-			}
-		}
-	}
+    .left {
+        background-color: #ff4e49;
+        height: .5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 .1rem;
+        .logo{
+            a{
+                display: block;
+                img{
+                    height: .25rem;
+                }
+            }
+        }
+        .appdown{
+            a{
+                display: block;
+                img{
+                    height: .34rem;
+                }
+            }
+        }
+    }
+	
+    #form-search {
+        height: .5rem;
+        width: 100%;
+        padding: 10px;
+        background-color: #fff;
+        z-index: 999;
+        >.search {
+            display: flex;
+            height: .3rem;
+            >.search{
+                flex: 1;
+                height: .3rem;
+            }
+            .button {
+                width: 63px;
+                background: #565656;
+                color: #fff;
+                border-radius: .1rem;
+                margin-left: .1rem;
+            }
+        }
+    }
 }
 
 // 底部共有样式
 #footer{
     background-color: #232a34;
     height: 1.18rem;
-    position: absolute;
-    bottom: 0;
     width: 100%;
     text-align: center;
     .foot_top{

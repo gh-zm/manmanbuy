@@ -1,0 +1,44 @@
+#main {
+    flex: 1;
+    overflow: auto;
+    .allBrand {
+        height: .3rem;
+        font-size: .16rem;
+        line-height: .3rem;
+        padding-left: .11rem;
+    }
+
+    .card.mui-card {
+        margin: 0;
+        >.title {
+            padding-left: .11rem;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: .3rem;
+        }
+        .mui-table-view {
+            li {
+                box-shadow: 0 0 10px 1px #ccc;
+                border: 1px solid #ccc;
+                margin-right: .02rem;
+                margin-bottom: .1rem;
+                .list{
+                    padding: 0;
+                    a {
+                        width: 100%;
+                        display: block;
+                        box-shadow: 0 0 .1rem #ccc;
+                        border-top: 1px solid #ccc;
+                        padding-left: .11rem;
+                        line-height: .3rem;
+                    }
+                }
+            }
+            .mui-table-view-cell:after {
+                left: 0;
+                width: 100%;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,40 @@
+#main {
+  flex: 1;
+  overflow: auto;
+}
+#main .allBrand {
+  height: .3rem;
+  font-size: .16rem;
+  line-height: .3rem;
+  padding-left: .11rem;
+}
+#main .card.mui-card {
+  margin: 0;
+}
+#main .card.mui-card > .title {
+  padding-left: .11rem;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: .3rem;
+}
+#main .card.mui-card .mui-table-view li {
+  box-shadow: 0 0 10px 1px #ccc;
+  border: 1px solid #ccc;
+  margin-right: .02rem;
+  margin-bottom: .1rem;
+}
+#main .card.mui-card .mui-table-view li .list {
+  padding: 0;
+}
+#main .card.mui-card .mui-table-view li .list a {
+  width: 100%;
+  display: block;
+  box-shadow: 0 0 .1rem #ccc;
+  border-top: 1px solid #ccc;
+  padding-left: .11rem;
+  line-height: .3rem;
+}
+#main .card.mui-card .mui-table-view .mui-table-view-cell:after {
+  left: 0;
+  width: 100%;
+}

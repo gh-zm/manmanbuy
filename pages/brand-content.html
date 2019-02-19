@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>主页</title>
+    <link rel="stylesheet" type="text/css" href="../lib/mui/css/mui.css">
+    <link rel="stylesheet" type="text/css" href="../lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet/less" href="../less/index.less">
+    <link rel="stylesheet/less" href="../less/brand-content.less">
+    <script src="../lib/less/less.js"></script>
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <div class="left">
+            <div class="logo">
+                <a href="index.html" title="慢慢买">
+                    <img src="../images/header_logo.png" alt="">
+                </a>
+            </div>
+            <div class="title"></div>
+            <div class="appdown">
+                <a href="#">
+                    <img src="../images/header_app.png" alt="手机app下载">
+                </a>
+            </div>
+        </div>
+        <div id="form-search">
+            <form action="#" class="search">
+                <input type="search" name="" class="search" placeholder="请输入你想比价的商品">
+                <input type="button" value="搜索" class="button">
+            </form>
+        </div>
+    </header>
+    <!-- 主体区域 -->
+    <main id="main">
+        <div class="allBrand">
+            <a href="index.html">首页</a>&gt;
+            <a href="brandTitle.html">全部分类</a>&gt;
+        </div>
+        <header class="mui-bar mui-bar-nav">
+            <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+            <h1 class="mui-title">顶部选项卡-可左右拖动(div)</h1>
+        </header>
+        <div class="mui-content content">
+            <div id="slider" class="mui-slider">
+                <div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+                    <a class="mui-control-item" href="#item1mobile">
+                待办公文
+            </a>
+                    <a class="mui-control-item" href="#item2mobile">
+                已办公文
+            </a>
+                    <a class="mui-control-item" href="#item3mobile">
+                全部公文
+            </a>
+                </div>
+                <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+                <div class="mui-slider-group">
+                    <div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+                        <div id="scroll1" class="mui-scroll-wrapper">
+                            <div class="mui-scroll">
+                                <ul class="mui-table-view" id="itmes">
+                                    <li class="mui-table-view-cell item">
+                                        <div class="left">
+                                            <div class="index">
+                                                <p class="i">1</p>
+                                            </div>
+                                            <div class="text">
+                                                    <p class="name">三星液晶电视</p>
+                                                    <p>30天全网销售:<span>&nbsp;14444</span>件</p>
+                                            </div>  
+                                        </div>
+                                        <div class="right">⇨</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="item2mobile" class="mui-slider-item mui-control-content">
+                        <div id="scroll2" class="mui-scroll-wrapper">
+                            <div class="mui-scroll">
+                                <ul class="mui-table-view" id="itmes2">
+                                    <li class="mui-table-view-cell item">
+                                        <div class="left">
+                                            <div class="index">
+                                                <p class="i">1</p>
+                                            </div>
+                                            <div class="text">
+                                                    <p class="name">三星液晶电视</p>
+                                                    <p>30天全网销售:<span>&nbsp;14444</span>件</p>
+                                            </div>  
+                                        </div>
+                                        <div class="right">⇨</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="item3mobile" class="mui-slider-item mui-control-content">
+                        <div id="scroll3" class="mui-scroll-wrapper">
+                            <div class="mui-scroll">
+                                <ul class="mui-table-view" id="itmes3">
+                                    <li class="mui-table-view-cell item">
+                                        <div class="left">
+                                            <div class="index">
+                                                <p class="i">1</p>
+                                            </div>
+                                            <div class="text">
+                                                    <p class="name">三星液晶电视</p>
+                                                    <p>30天全网销售:<span>&nbsp;14444</span>件</p>
+                                            </div>  
+                                        </div>
+                                        <div class="right">⇨</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        
+
+        </div>
+    </main>
+    <script id="brandTitleTpl" type="text/html">
+        {{ each result value index}}
+        <li class="mui-table-view-cell item">
+            <div class="left">
+                <div class="index">
+                    <p class="i">{{index + 1}}</p>
+                </div>
+                <div class="text">
+                        <p class="name">{{ value.brandName }}</p>
+                        <p>{{ value.brandInfo}}</p>
+                </div>  
+            </div>
+            <div class="right">⇨</div>
+        </li>
+        {{ /each }}
+    </script>
+    <script id="brandTitle2Tpl" type="text/html">
+        {{ each result value index}}
+        <li class="mui-table-view-cell item">
+            <div class="left">
+                <div class="index">
+                    <p class="i">{{index + 1}}</p>
+                </div>
+                <div class="text">
+                        <p class="name">{{ value.brandName }}</p>
+                        <p>{{ value.brandInfo}}</p>
+                </div>  
+            </div>
+            <div class="right">⇨</div>
+        </li>
+        {{ /each }}
+    </script>
+    <!-- <script id="brandTitle3Tpl" type="text/html">
+        {{ each result value index}}
+        <li class="mui-table-view-cell item">
+            <div class="left">
+                <div class="index">
+                    <p class="i">{{index + 1}}</p>
+                </div>
+                <div class="text">
+                        <p class="name">{{ value.brandName }}</p>
+                        <p>{{ value.brandInfo}}</p>
+                </div>  
+            </div>
+            <div class="right">⇨</div>
+        </li>
+        {{ /each }}
+    </script> -->
+    <!-- 底部区域 -->
+    <footer id="footer">
+        <div class="foot_top">
+            <a href="login.html">登录</a>
+            <a href="register.html">注册</a>
+            <a href="javascript:;" style="width: 40%; border: 0;" id="rtt">
+                <img src="../images/top.png">返回顶部
+            </a>
+        </div>
+        <div class="foot_bottom">
+            <p>
+                <a href="javascript:;">手机APP下载</a>
+                <a href="index.htm">慢慢买手机版 -- 掌上比价平台</a>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+    <script src="../lib/mui/js/mui.js"></script>
+    <script src="../lib/zepto/zepto.min.js"></script>
+    <script src="../lib/artTemplate/template-web.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/brand-content.js"></script>
+</body>
+</html>
