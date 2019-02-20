@@ -1,0 +1,162 @@
+@import './base.less';
+
+#header {
+    z-index: 999;
+}
+
+#main {
+    padding: .2rem;
+    position: relative;
+    flex: 1;
+    padding-bottom: 1.18rem;
+    background-color: #fff;
+
+    .mui-scroll-wrapper {
+        bottom: 1.18rem;
+    }
+
+    .product-list {
+        padding: .2rem;
+
+        .title {
+            margin: 0;
+        }
+
+        .price {
+            color: red;
+            line-height: .4rem;
+            font-weight: 700;
+        }
+
+        .info {
+            color: #ccc;
+            line-height: .4rem;
+        }
+
+        .particulars {
+            display: flex;
+
+            .des-left {
+                font-size: .16rem;
+                width: 50%;
+                color: #333;
+            }
+
+            .right-img {
+                flex: 1;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .bannar {
+            img {
+                width: 100%;
+            }
+        }
+
+        .btn-shop {
+            width: 100%;
+        }
+
+
+        .des {
+            color: #333;
+            font-size: .16rem;
+        }
+
+        // 评论区域
+        .comment {
+            margin-top: 50px;
+
+            .cu-content-pl {
+                .tit {
+                    font-size: .16rem;
+                    line-height: .2rem;
+                }
+            }
+
+            .reply {
+                position: relative;
+
+
+
+                .ctrl {
+                    input {
+                        position: absolute;
+                        right: 0;
+                        background-color: red;
+                        border: none;
+                        top: .54rem;
+                    }
+                }
+
+            }
+
+            // 最新评论
+            #newcomment {
+                font-size: .2rem;
+            }
+
+            
+            .list ul li {
+                margin-bottom: 0.2rem;
+                padding:.05rem 0;
+                .userimg {
+                    float: left;
+                    margin-right: 0.2rem;
+
+                    img {
+                        width: 0.6rem;
+                        height: 0.6rem;
+                        border-radius: 50%;
+                    }
+                }
+
+                .clearfix {
+                    height: 0.25rem;
+
+                    &:after {
+                        content: "020";
+                        display: block;
+                        height: 0;
+                        clear: both;
+                        visibility: hidden;
+                        overflow: hidden;
+                    }
+                }
+
+                .content {
+                    font-size: 0.14rem;
+                    color: #606060;
+                    overflow: hidden;
+                }
+
+                .yinyong {
+                    overflow: hidden;
+                }
+
+                .username {
+                    color: skyblue;
+                    font-size: 0.12rem;
+                    float: left;
+                }
+
+                .time {
+                    float: right;
+                    font-size: 0.12rem;
+                    color: #999999;
+                }
+            }
+
+        }
+    }
+
+
+}
+
+#footer {
+    z-index: 999;
+}

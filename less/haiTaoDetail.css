@@ -1,0 +1,228 @@
+html {
+  /* 设置 根元素在 375屏幕下的时候 是100px   100px就是 26.66667vw */
+  font-size: 26.66667vw;
+}
+body {
+  font-size: .14rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  vertical-align: middle;
+  border: none;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+em,
+i {
+  font-style: normal;
+}
+input {
+  outline: none;
+  border: none;
+}
+a {
+  color: #000;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+#header {
+  background-color: #ff4e49;
+  height: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 .1rem;
+}
+#header .logo a {
+  display: block;
+}
+#header .logo a img {
+  height: .25rem;
+}
+#header .appdown a {
+  display: block;
+}
+#header .appdown a img {
+  height: .34rem;
+}
+#mian {
+  flex: 1;
+}
+#footer {
+  background-color: #232a34;
+  height: 1.18rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+#footer .foot_top {
+  height: .34rem;
+  line-height: .34rem;
+  border-bottom: 1px solid #727272;
+  text-align: center;
+  display: flex;
+}
+#footer .foot_top a {
+  color: #fff;
+  font-size: .14rem;
+  width: 33.3%;
+}
+#footer .foot_top a:nth-child(n+1) {
+  border-right: 1px solid #727272;
+}
+#footer .foot_top a:last-child img {
+  width: .16rem;
+  margin-right: .05rem;
+}
+#footer .foot_bottom {
+  padding: .15rem 0;
+}
+#footer .foot_bottom p {
+  color: #666;
+  font-size: .12rem;
+}
+#footer .foot_bottom p a {
+  color: #ff4e49;
+}
+#footer .foot_bottom p a:last-child {
+  color: #bebebe;
+}
+#header {
+  z-index: 999;
+}
+#main {
+  padding: .2rem;
+  position: relative;
+  flex: 1;
+  padding-bottom: 1.18rem;
+  background-color: #fff;
+}
+#main .mui-scroll-wrapper {
+  bottom: 1.18rem;
+}
+#main .product-list {
+  padding: .2rem;
+}
+#main .product-list .title {
+  margin: 0;
+}
+#main .product-list .price {
+  color: red;
+  line-height: .4rem;
+  font-weight: 700;
+}
+#main .product-list .info {
+  color: #ccc;
+  line-height: .4rem;
+}
+#main .product-list .particulars {
+  display: flex;
+}
+#main .product-list .particulars .des-left {
+  font-size: .16rem;
+  width: 50%;
+  color: #333;
+}
+#main .product-list .particulars .right-img {
+  flex: 1;
+}
+#main .product-list .particulars .right-img img {
+  width: 100%;
+}
+#main .product-list .bannar img {
+  width: 100%;
+}
+#main .product-list .btn-shop {
+  width: 100%;
+}
+#main .product-list .des {
+  color: #333;
+  font-size: .16rem;
+}
+#main .product-list .comment {
+  margin-top: 50px;
+}
+#main .product-list .comment .cu-content-pl .tit {
+  font-size: .16rem;
+  line-height: .2rem;
+}
+#main .product-list .comment .reply {
+  position: relative;
+}
+#main .product-list .comment .reply .ctrl input {
+  position: absolute;
+  right: 0;
+  background-color: red;
+  border: none;
+  top: .54rem;
+}
+#main .product-list .comment #newcomment {
+  font-size: .2rem;
+}
+#main .product-list .comment .list ul li {
+  margin-bottom: 0.2rem;
+  padding: .05rem 0;
+}
+#main .product-list .comment .list ul li .userimg {
+  float: left;
+  margin-right: 0.2rem;
+}
+#main .product-list .comment .list ul li .userimg img {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+}
+#main .product-list .comment .list ul li .clearfix {
+  height: 0.25rem;
+}
+#main .product-list .comment .list ul li .clearfix:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow: hidden;
+}
+#main .product-list .comment .list ul li .content {
+  font-size: 0.14rem;
+  color: #606060;
+  overflow: hidden;
+}
+#main .product-list .comment .list ul li .yinyong {
+  overflow: hidden;
+}
+#main .product-list .comment .list ul li .username {
+  color: skyblue;
+  font-size: 0.12rem;
+  float: left;
+}
+#main .product-list .comment .list ul li .time {
+  float: right;
+  font-size: 0.12rem;
+  color: #999999;
+}
+#footer {
+  z-index: 999;
+}
