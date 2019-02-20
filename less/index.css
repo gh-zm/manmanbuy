@@ -1,167 +1,217 @@
-/* 慢慢买主题颜色 */
-/* a的颜色 */
-/* 边框颜色 */
-* {
-  margin: 0rem;
-  padding: 0rem;
-}
 html {
-  font-size: 100px;
+  /* 设置 根元素在 375屏幕下的时候 是100px   100px就是 26.66667vw */
+  font-size: 26.66667vw;
 }
 body {
-  font-size: 0.16rem;
-  height: 100vh;
+  font-size: .14rem;
+}
+* {
+  margin: 0;
+  padding: 0;
 }
 img {
   vertical-align: middle;
+  border: none;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+em,
+i {
+  font-style: normal;
+}
+input {
+  outline: none;
+  border: none;
 }
 a {
-  color: #666;
+  color: #000;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+#header {
+  background-color: #ff4e49;
+  height: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 .1rem;
+}
+#header .logo a {
+  display: block;
+}
+#header .logo a img {
+  height: .25rem;
+}
+#header .appdown a {
+  display: block;
+}
+#header .appdown a img {
+  height: .34rem;
 }
 #footer {
-  padding-top: 10px;
-}
-#footer .top {
-  display: flex;
-}
-#footer .top a {
-  flex: 1;
-  text-align: center;
-  background-color: black;
-  color: white;
-}
-#footer .bottom {
-  background-color: black;
-  height: 100px;
-  padding-top: 20px;
-  text-align: center;
-}
-#header .top {
-  display: flex;
+  z-index: 999;
+  background-color: #232a34;
+  height: 1.18rem;
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  background-color: hotpink;
-  justify-content: space-between;
+  text-align: center;
 }
-#header .top .logo {
-  display: block;
-  height: 45px;
+#footer .foot_top {
+  height: .34rem;
+  line-height: .34rem;
+  border-bottom: 1px solid #727272;
+  text-align: center;
+  display: flex;
 }
-#header .top .logo img {
-  margin-left: 10px;
-  margin-top: 10px;
-  height: 25px;
+#footer .foot_top a {
+  color: #fff;
+  font-size: .14rem;
+  width: 33.3%;
 }
-#header .top .download {
+#footer .foot_top a:nth-child(n+1) {
+  border-right: 1px solid #727272;
+}
+#footer .foot_top a:last-child img {
+  width: .16rem;
+  margin-right: .05rem;
+}
+#footer .foot_bottom {
+  padding: .15rem 0;
+}
+#footer .foot_bottom p {
+  color: #666;
+  font-size: .12rem;
+}
+#footer .foot_bottom p a {
+  color: #ff4e49;
+}
+#footer .foot_bottom p a:last-child {
+  color: #bebebe;
+}
+#main {
+  flex: 1;
+  padding-bottom: 1.18rem;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1.18rem;
+}
+#main #search {
+  background-color: #fff;
+  padding: .1rem;
+}
+#main #search form {
+  display: flex;
+}
+#main #search form input {
+  flex: 1;
+  height: .3rem;
+  border-radius: .3rem;
+  padding: 10px;
+  background-color: #f1f1f1;
+  margin: 0;
+}
+#main #search form button {
+  background-color: #ff841d;
+  width: .6rem;
+  height: .3rem;
+  border-radius: .3rem;
+  border: none;
+  margin-left: .05rem;
+  color: #fff;
+}
+#main #slider img {
+  width: 100%;
   height: 100%;
-  display: block;
-  height: 45px;
-}
-#header .top .download img {
-  height: 90%;
-}
-#header form {
-  flex: 1;
-  display: flex;
-  padding-top: 10px;
-}
-#header form > input:first-of-type {
-  width: 100%;
-  height: 30px;
-  border: 0px;
-  border-radius: 15px;
-  background-color: white;
-  padding-left: 10px;
-  text-align: left;
-}
-#header form > input:last-of-type {
-  border-radius: 15px;
-  background-color: grey;
-  color: white;
-  height: 30px;
-}
-#header .download {
-  width: 60px;
-  line-height: 45px;
-  text-align: center;
-  font-size: 14px;
-  color: red;
 }
 #main #nav {
-  padding-top: 30px;
-  background-color: white;
+  margin-top: 10px;
 }
-#main #nav .mui-row .mui-col-xs-3 a {
-  display: block;
+#main #nav .mui-row {
+  height: 1.74rem;
+  overflow: hidden;
+  transition: all 1.5s;
+}
+#main #nav .mui-row.active {
+  height: 2.61rem;
+}
+#main #nav .mui-row > div {
   text-align: center;
 }
-#main #nav .mui-row .mui-col-xs-3 a img {
-  width: 50px;
-  margin-bottom: 10px;
+#main #nav .mui-row > div a img {
+  width: .5rem;
+  height: .5rem;
+}
+#main #nav .mui-row > div a p {
+  padding: 3px;
 }
 #main #productList .title {
+  line-height: .36rem;
+  height: .36rem;
   display: flex;
-  width: 100%;
   justify-content: space-between;
-  padding: 0 10px;
-  color: white;
-  background-color: red;
-  height: 20px;
+  padding: 0 .1rem;
+  background-color: #ff9b1b;
 }
-#main #productList .title i {
+#main #productList .title h4 {
+  margin: 0;
+  line-height: .36rem;
+  color: #fff;
+}
+#main #productList .title a {
   display: block;
-  line-height: 20px;
+  width: .2rem;
+  height: .2rem;
 }
-#main #productList .content ul li a {
-  display: flex;
-  padding: 20px;
-}
-#main #productList .content ul li a .left img {
-  height: 150px;
-}
-#main #productList .content ul li a .right {
-  background-color: #fff;
-  flex: 1;
-}
-#main #productList .content ul li a .right p {
-  margin-bottom: 50px;
-}
-#main #productList .more-bar {
-  background-color: #fff;
-  text-align: center;
-  height: 30px;
-  font-size: 14px;
-  line-height: 30px;
-  width: 95%;
-  margin: 0 auto;
-}
-#main #productList #recommen a {
-  display: flex;
+#main #productList .title a img {
   width: 100%;
-  justify-content: space-between;
-  padding: 0 10px;
-  color: white;
-  background-color: red;
-  height: 20px;
 }
-#main #productList #recommen a i {
-  display: block;
-  line-height: 20px;
+#main #productList .content img {
+  width: 100%;
+  height: 100%;
 }
-#footer {
-  padding-top: 10px;
+#main #productList .content .mui-media-object {
+  width: 1.1rem;
+  height: .5rem;
 }
-#footer .top {
-  display: flex;
+#main #productList .content .product-name > p {
+  width: 100%;
+  color: red;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-#footer .top a {
-  flex: 1;
-  text-align: center;
-  background-color: black;
-  color: white;
+#main #productList .content .product-name > span {
+  color: red;
 }
-#footer .bottom {
-  background-color: black;
-  height: 100px;
-  padding-top: 20px;
-  text-align: center;
+#main #productList .content .product-info {
+  font-size: 12px;
+  color: #ccc;
+}
+#main .mmb-more {
+  margin-top: 5px;
+  width: 100%;
+  padding: 0 5px;
+}
+#main .mmb-more button {
+  width: 100%;
+  background-color: #ccc;
 }
